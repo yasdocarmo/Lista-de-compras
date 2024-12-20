@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Lista de Compras</h1>
+    <div class="input-container">
+        <select id="sectionSelect">
+            <option value="">Escolha uma seção</option>
+            <option value="Frutas">Frutas</option>
+            <option value="Verduras">Verduras</option>
+            <option value="Carnes">Carnes</option>
+            <option value="Laticínios">Laticínios</option>
+            <option value="Grãos">Grãos</option>
+            <option value="Doces">Doces</option>
+        </select>
+        <input type="text" id="itemInput" placeholder="Adicione um item">
+        <button id="addButton">Adicionar</button>
+    </div>
+    <div class="emoji-container">
+        <button id="emojiButton">Escolher Emoji</button>
+        <div id="emojiList" class="hidden">
+            <span class="emoji" data-emoji="🍚">🍚</span>
+            <span class="emoji" data-emoji="🍝">🍝</span>
+            <span class="emoji" data-emoji="🍖">🍖</span>
+            <span class="emoji" data-emoji="🍞">🍞</span>
+            <span class="emoji" data-emoji="🥩">🥩</span>
+            <span class="emoji" data-emoji="🥗">🥗</span>
+            <span class="emoji" data-emoji="🍲">🍲</span>
+            <span class="emoji" data-emoji="🍳">🍳</span>
+            <span class="emoji" data-emoji="🥔">🥔</span>
+            <span class="emoji" data-emoji="🌽">🌽</span>
+            <span class="emoji" data-emoji="🍅">🍅</span>
+            <span class="emoji" data-emoji="🍌">🍌</span>
+            <span class="emoji" data-emoji="🍎">🍎</span>
+            <span class="emoji" data-emoji="🍇">🍇</span>
+            <span class="emoji" data-emoji="🍰">🍰</span>
+            <span class="emoji" data-emoji="🥛">🥛</span>
+            <span class="emoji" data-emoji="🧀">🧀</span>
+        </div>
+    </div>
+    
+    <ul id="shoppingList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
